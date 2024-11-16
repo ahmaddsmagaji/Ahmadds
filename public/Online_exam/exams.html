@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exams</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1 {
+            color: #1e88e5;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            margin-top: 40px;
+            color: #333;
+            border-bottom: 3px solid #1e88e5;
+            padding-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 40px;
+        }
+
+        .exam-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .exam-box {
+            flex: 1 1 calc(30% - 20px);
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .exam-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .exam-box strong {
+            font-size: 1.2rem;
+            color: #333;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        li {
+            background-color: #ffffff;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        li:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #1e88e5;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .exam-box {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Exams Page</h1>
+    <p>Welcome to the exams page. Here, you can find information about various exams available to you, including upcoming and completed exams. Please review the list and select the exam you need to take.</p>
+
+    <h2>Available Exams</h2>
+    <div class="exam-container">
+        <div class="exam-box" role="group" aria-labelledby="available-exams">
+            <strong>MS Word:</strong> Test your proficiency in Microsoft Word, covering document creation, formatting, and advanced features.
+        </div>
+        <div class="exam-box" role="group" aria-labelledby="available-exams">
+            <strong>Data Communication:</strong> Assess your knowledge of networking concepts, communication protocols, and data transmission methods.
+        </div>
+        <div class="exam-box" role="group" aria-labelledby="available-exams">
+            <strong>Excel:</strong> Evaluate your skills in Microsoft Excel, including data analysis, formulas, and pivot tables.
+        </div>
+        <div class="exam-box" role="group" aria-labelledby="available-exams">
+            <strong>Database Management:</strong> Demonstrate your understanding of relational databases, SQL queries, and database design principles.
+        </div>
+        <div class="exam-box" role="group" aria-labelledby="available-exams">
+            <strong>Web Development:</strong> Test your knowledge of HTML, CSS, JavaScript, and responsive web design techniques.
+        </div>
+        <div class="exam-box" role="group" aria-labelledby="available-exams">
+            <strong>Cybersecurity Fundamentals:</strong> Assess your awareness of cybersecurity principles, threats, and protective measures.
+        </div>
+        <div class="exam-box" role="group" aria-labelledby="available-exams">
+            <strong>Python Programming:</strong> Demonstrate your proficiency in Python programming, including data structures, functions, and libraries.
+        </div>
+    </div>
+
+    <h2>Upcoming Exams</h2>
+    <ul>
+        <li><strong>Advanced Networking:</strong> Exam date: September 15, 2024</li>
+        <li><strong>Machine Learning Basics:</strong> Exam date: September 20, 2024</li>
+        <li><strong>Cloud Computing:</strong> Exam date: October 5, 2024</li>
+    </ul>
+
+    <h2>Completed Exams</h2>
+    <ul>
+        <li><strong>Java Programming:</strong> Completed on August 10, 2024</li>
+        <li><strong>Digital Marketing:</strong> Completed on August 15, 2024</li>
+        <li><strong>Project Management:</strong> Completed on August 20, 2024</li>
+    </ul>
+
+    <footer>
+        <p>&copy; 2024 Online Examination System - Exams Page</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Exam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #0277bd;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .exam-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #0277bd;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .options {
+            list-style: none;
+            padding: 0;
+        }
+
+        .options li {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #0277bd;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #01579b;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: green;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #0277bd;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Math Exam</h1>
+    </header>
+
+    <div class="exam-container">
+        <h2>Answer the following questions:</h2>
+
+        <form id="examForm">
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. What is the value of 5 + 7?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q1" value="10"> 10</li>
+                    <li><input type="radio" name="q1" value="12"> 12</li>
+                    <li><input type="radio" name="q1" value="15"> 15</li>
+                    <li><input type="radio" name="q1" value="13"> 13</li>
+                </ul>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <p>2. What is the square root of 16?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q2" value="2"> 2</li>
+                    <li><input type="radio" name="q2" value="4"> 4</li>
+                    <li><input type="radio" name="q2" value="6"> 6</li>
+                    <li><input type="radio" name="q2" value="8"> 8</li>
+                </ul>
+            </div>
+
+                     <!-- Question 3 -->
+            <div class="question">
+                <p>3. Solve: 3x = 12. What is the value of x?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q3" value="2"> 2</li>
+                    <li><input type="radio" name="q3" value="4"> 4</li>
+                    <li><input type="radio" name="q3" value="6"> 6</li>
+                    <li><input type="radio" name="q3" value="8"> 8</li>
+                </ul>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <p>4. What is 15% of 200?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q4" value="15"> 15</li>
+                    <li><input type="radio" name="q4" value="30"> 30</li>
+                    <li><input type="radio" name="q4" value="45"> 45</li>
+                    <li><input type="radio" name="q4" value="60"> 60</li>
+                </ul>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <p>5. What is 7 multiplied by 6?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q5" value="36"> 36</li>
+                    <li><input type="radio" name="q5" value="42"> 42</li>
+                    <li><input type="radio" name="q5" value="48"> 48</li>
+                    <li><input type="radio" name="q5" value="54"> 54</li>
+                </ul>
+            </div>
+
+       
+                <!-- Question 6 -->
+            <div class="question">
+                <p>6. What is the perimeter of a square with sides of length 5 cm?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q6" value="10 cm"> 10 cm</li>
+                    <li><input type="radio" name="q6" value="15 cm"> 15 cm</li>
+                    <li><input type="radio" name="q6" value="20 cm"> 20 cm</li>
+                    <li><input type="radio" name="q6" value="25 cm"> 25 cm</li>
+                </ul>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <p>7. If a train travels 60 km in 1 hour, how far will it travel in 3 hours?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q7" value="120 km"> 120 km</li>
+                    <li><input type="radio" name="q7" value="180 km"> 180 km</li>
+                    <li><input type="radio" name="q7" value="240 km"> 240 km</li>
+                    <li><input type="radio" name="q7" value="300 km"> 300 km</li>
+                </ul>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <p>8. What is the value of π (pi) to two decimal places?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q8" value="3.12"> 3.12</li>
+                    <li><input type="radio" name="q8" value="3.14"> 3.14</li>
+                    <li><input type="radio" name="q8" value="3.16"> 3.16</li>
+                    <li><input type="radio" name="q8" value="3.18"> 3.18</li>
+                </ul>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <p>9. A triangle has angles of 60°, 60°, and 60°. What type of triangle is it?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q9" value="Scalene"> Scalene</li>
+                    <li><input type="radio" name="q9" value="Isosceles"> Isosceles</li>
+                    <li><input type="radio" name="q9" value="Equilateral"> Equilateral</li>
+                    <li><input type="radio" name="q9" value="Right-angled"> Right-angled</li>
+                </ul>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <p>10. What is 9² (9 squared)?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q10" value="72"> 72</li>
+                    <li><input type="radio" name="q10" value="81"> 81</li>
+                    <li><input type="radio" name="q10" value="90"> 90</li>
+                    <li><input type="radio" name="q10" value="99"> 99</li>
+                </ul>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Exam</button>
+        </form>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Math Exam</p>
+    </footer>
+
+    <script>
+        document.getElementById("examForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let score = 0;
+
+            // Correct answers
+            const answers = {
+                q1: "12",
+                q2: "4",
+                q3: "4",
+                q4: "30",
+                q5: "42",
+                q6: "20 cm",
+                q7: "180 km",
+                q8: "3.14",
+                q9: "Equilateral",
+                q10: "81"
+            };
+
+            // Check answers
+            const formData = new FormData(this);
+            formData.forEach((value, key) => {
+                if (value === answers[key]) {
+                    score++;
+                }
+            });
+
+            // Display result
+            document.getElementById("result").textContent = "Your score: " + score + "/10";
+        });
+    </script>
+</body>
+</html>

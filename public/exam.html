@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exams</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #d3d3d3; /* Changed to gray */
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #00796b;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.4rem;
+            margin: 15px 0 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .exam-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .exam-item {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 250px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .exam-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .exam-item a {
+            text-decoration: none;
+            color: #00796b;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .exam-item a:hover {
+            color: #004d40;
+        }
+
+        .exam-icon {
+            font-size: 3rem;
+            color: #00796b;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #00796b;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-top: 60px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Online Exams</h1>
+        <p>Select an exam to start</p>
+    </header>
+
+    <div class="container">
+        <div class="exam-list">
+            <div class="exam-item">
+                <div class="exam-icon">💻</div>
+                <a href="computer_science_exam.html">Computer Science Exam</a>
+            </div>
+            <div class="exam-item">
+                <div class="exam-icon">➕</div>
+                <a href="math_exam.html">Math Exam</a>
+            </div>
+            <div class="exam-item">
+                <div class="exam-icon">📰</div>
+                <a href="current_affairs_exam.html">Current Affairs Exam</a>
+            </div>
+            <div class="exam-item">
+                <div class="exam-icon">📚</div>
+                <a href="english_exam.html">English Exam</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Online Examination System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

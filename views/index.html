@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Examination System</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #00796b;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            background-color: #004d40;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #003d33;
+            border-radius: 5px;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .welcome-text {
+            font-size: 1.5rem;
+            color: #00796b;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #00796b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        /* Media Query for mobile responsiveness */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem; /* Slightly smaller font size for smaller screens */
+            }
+            nav {
+                flex-direction: column; /* Stack links vertically on small screens */
+                align-items: center;
+            }
+            nav a {
+                padding: 15px; /* Increased padding for easier clicking */
+                font-size: 1.2rem; /* Slightly larger text for readability */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Online Examination System</h1>
+    </header>
+
+    <nav>
+        <a href="exam.html">Home</a>
+        <a href="Online_exam/registration.html">Registration</a> <!-- Corrected the path and used lowercase for consistency -->
+        <a href="Online_exam/exams.html">Exam</a> <!-- Added .html extension for consistency -->
+        <a href="Online_exam/admin.html">Admin</a> <!-- Added .html extension for consistency -->
+    </nav>
+
+    <div class="content">
+        <p class="welcome-text">Welcome to the Online Examination System. Select an option from the menu to proceed.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Online Examination System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

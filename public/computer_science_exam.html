@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Exam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 0;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+        }
+        .exam-content {
+            display: inline-block;
+            text-align: left;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin-bottom: 30px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .question input[type="radio"] {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .submit-btn:hover {
+            background-color: #34495e;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Computer Science Exam</h1>
+        <p>Test your knowledge on MS Word, Excel, and Database Management!</p>
+    </header>
+
+    <div class="exam-content">
+        <form id="examForm">
+            <!-- MS Word Questions -->
+            <div class="question">
+                <h3>1. In MS Word, what is the shortcut key for saving a document?</h3>
+                <label><input type="radio" name="q1" value="a"> Ctrl + C</label>
+                <label><input type="radio" name="q1" value="b"> Ctrl + S</label>
+                <label><input type="radio" name="q1" value="c"> Ctrl + V</label>
+                <label><input type="radio" name="q1" value="d"> Ctrl + X</label>
+            </div>
+
+            <div class="question">
+                <h3>2. What is the default file extension for MS Word documents?</h3>
+                <label><input type="radio" name="q2" value="a"> .doc</label>
+                <label><input type="radio" name="q2" value="b"> .docx</label>
+                <label><input type="radio" name="q2" value="c"> .pdf</label>
+                <label><input type="radio" name="q2" value="d"> .txt</label>
+            </div>
+
+            <div class="question">
+                <h3>3. How do you insert a table in MS Word?</h3>
+                <label><input type="radio" name="q3" value="a"> Insert &gt; Picture</label>
+                <label><input type="radio" name="q3" value="b"> Insert &gt; Table</label>
+                <label><input type="radio" name="q3" value="c"> Home &gt; Table</label>
+                <label><input type="radio" name="q3" value="d"> Layout &gt; Insert</label>
+            </div>
+
+            <!-- Excel Questions -->
+            <div class="question">
+                <h3>4. In Excel, which function is used to calculate the sum of a range of cells?</h3>
+                <label><input type="radio" name="q4" value="a"> =SUM()</label>
+                <label><input type="radio" name="q4" value="b"> =ADD()</label>
+                <label><input type="radio" name="q4" value="c"> =TOTAL()</label>
+                <label><input type="radio" name="q4" value="d"> =CALCULATE()</label>
+            </div>
+
+            <div class="question">
+                <h3>5. What is the default file extension for an Excel workbook?</h3>
+                <label><input type="radio" name="q5" value="a"> .xlsx</label>
+                <label><input type="radio" name="q5" value="b"> .xls</label>
+                <label><input type="radio" name="q5" value="c"> .csv</label>
+                <label><input type="radio" name="q5" value="d"> .xml</label>
+            </div>
+
+            <div class="question">
+                <h3>6. How do you create a chart in Excel?</h3>
+                <label><input type="radio" name="q6" value="a"> Formulas &gt; Chart</label>
+                <label><input type="radio" name="q6" value="b"> Insert &gt; Chart</label>
+                <label><input type="radio" name="q6" value="c"> View &gt; Chart</label>
+                <label><input type="radio" name="q6" value="d"> Data &gt; Chart</label>
+            </div>
+
+            <!-- Database Management Questions -->
+            <div class="question">
+                <h3>7. What is the primary key in a database?</h3>
+                <label><input type="radio" name="q7" value="a"> A unique identifier for each record</label>
+                <label><input type="radio" name="q7" value="b"> The first field in a table</label>
+                <label><input type="radio" name="q7" value="c"> A foreign key</label>
+                <label><input type="radio" name="q7" value="d"> A field that stores text data</label>
+            </div>
+
+            <div class="question">
+                <h3>8. Which SQL statement is used to retrieve data from a database?</h3>
+                <label><input type="radio" name="q8" value="a"> SELECT</label>
+                <label><input type="radio" name="q8" value="b"> DELETE</label>
+                <label><input type="radio" name="q8" value="c"> INSERT</label>
+                <label><input type="radio" name="q8" value="d"> UPDATE</label>
+            </div>
+
+            <div class="question">
+                <h3>9. Which of the following is a type of database model?</h3>
+                <label><input type="radio" name="q9" value="a"> Hierarchical</label>
+                <label><input type="radio" name="q9" value="b"> Sequential</label>
+                <label><input type="radio" name="q9" value="c"> Linear</label>
+                <label><input type="radio" name="q9" value="d"> Tabular</label>
+            </div>
+
+            <div class="question">
+                <h3>10. Which SQL command is used to add new data to a database?</h3>
+                <label><input type="radio" name="q10" value="a"> INSERT INTO</label>
+                <label><input type="radio" name="q10" value="b"> ADD NEW</label>
+                <label><input type="radio" name="q10" value="c"> APPEND</label>
+                <label><input type="radio" name="q10" value="d"> ADD RECORD</label>
+            </div>
+
+            <!-- General Questions -->
+            <div class="question">
+                <h3>11. What does CPU stand for?</h3>
+                <label><input type="radio" name="q11" value="a"> Central Processing Unit</label>
+                <label><input type="radio" name="q11" value="b"> Central Power Unit</label>
+                <label><input type="radio" name="q11" value="c"> Central Performance Unit</label>
+                <label><input type="radio" name="q11" value="d"> Computer Processing Unit</label>
+                </div>
+
+            <div class="question">
+                <h3>12. What is RAM in a computer system?</h3>
+                <label><input type="radio" name="q12" value="a"> Read Access Memory</label>
+                <label><input type="radio" name="q12" value="b"> Random Access Memory</label>
+                <label><input type="radio" name="q12" value="c"> Read-Only Memory</label>
+                <label><input type="radio" name="q12" value="d"> Random Available Memory</label>
+            </div>
+
+            <div class="question">
+                <h3>13. What type of software is Microsoft Excel?</h3>
+                <label><input type="radio" name="q13" value="a"> Operating System</label>
+                <label><input type="radio" name="q13" value="b"> Spreadsheet Software</label>
+                <label><input type="radio" name="q13" value="c"> Word Processor</label>
+                <label><input type="radio" name="q13" value="d"> Database Software</label>
+            </div>
+
+            <div class="question">
+                <h3>14. What is a database management system (DBMS)?</h3>
+                <label><input type="radio" name="q14" value="a"> A software for managing data</label>
+                <label><input type="radio" name="q14" value="b"> A type of hardware</label>
+                <label><input type="radio" name="q14" value="c"> A networking tool</label>
+                <label><input type="radio" name="q14" value="d"> A software development tool</label>
+            </div>
+
+            <div class="question">
+                <h3>15. Which of the following is an example of an operating system?</h3>
+                <label><input type="radio" name="q15" value="a"> Microsoft Excel</label>
+                <label><input type="radio" name="q15" value="b"> Microsoft Word</label>
+                <label><input type="radio" name="q15" value="c"> Windows 10</label>
+                <label><input type="radio" name="q15" value="d"> SQL Server</label>
+            </div>
+
+            <button type="button" class="submit-btn" onclick="submitExam()">Submit Exam</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Computer Science Exam</p>
+    </footer>
+
+    <script>
+        function submitExam() {
+            const totalQuestions = 15;
+            let correctAnswers = 0;
+
+            const answers = {
+                q1: 'b',
+                q2: 'b',
+                q3: 'b',
+                q4: 'a',
+                q5: 'a',
+                q6: 'b',
+                q7: 'a',
+                q8: 'a',
+                q9: 'a',
+                q10: 'a',
+                q11: 'a',
+                q12: 'b',
+                q13: 'b',
+                q14: 'a',
+                q15: 'c'
+            };
+
+            for (let i = 1; i <= totalQuestions; i++) {
+                const selected =document.querySelector(input[name="q${i}"]:checked);
+                if (selected && selected.value === answers[q${i}]) {
+                    correctAnswers++;
+                }
+            }
+
+            const result = document.createElement("p");
+            result.textContent = You got ${correctAnswers} out of ${totalQuestions} correct.;
+            document.body.appendChild(result);
+        }
+    </script>
+
+</body>
+</html>
